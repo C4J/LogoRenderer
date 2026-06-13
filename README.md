@@ -1,1 +1,2 @@
-# c4j_logorenderer
+LogoRenderer
+Aid for testing Logopak Emulator
