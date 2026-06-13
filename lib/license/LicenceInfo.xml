@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<info>
+
+    <libraries>
+
+        <library>
+            <description>Apache Commons Imaging</description>
+            <version>1.0.0-alpha6</version>
+            <type>Apache License 2.0</type>
+        </library>
+
+        <library>
+            <description>Apache Commons IO</description>
+            <version>2.21.0</version>
+            <type>Apache License 2.0</type>
+        </library>
+
+        <library>
+            <description>Okapi Barcode</description>
+            <version>0.5.5</version>
+            <type>Apache License 2.0</type>
+        </library>
+
+    </libraries>
+
+    <licenses>
+
+        <license>
+            <type>Apache License 2.0</type>
+            <filename>Apache Licence Version 2.0.txt</filename>
+        </license>
+
+        <license>
+            <type>GNU General Public License V2</type>
+            <filename>GNU General Public License V2.txt</filename>
+        </license>
+
+    </licenses>
+
+</info>

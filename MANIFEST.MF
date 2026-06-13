@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Main-Class: com.commander4j.logorenderer.LogoRenderer
+Class-Path: c4j_logorenderer.jar 
+ lib/commons-imaging-1.0.0-alpha6.jar 
+ lib/commons-io-2.21.0.jar 
+ lib/okapibarcode-0.5.5.jar 

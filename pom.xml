@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.commander4j</groupId>
+    <artifactId>c4j_logorenderer</artifactId>
+    <version>1.0.0</version>
+    <packaging>jar</packaging>
+
+    <properties>
+        <maven.compiler.source>25</maven.compiler.source>
+        <maven.compiler.target>25</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <lib.dir>${project.basedir}/lib</lib.dir>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>uk.org.okapibarcode</groupId>
+            <artifactId>okapibarcode</artifactId>
+            <version>0.5.5</version>
+            <scope>system</scope>
+            <systemPath>${lib.dir}/okapibarcode-0.5.5.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-imaging</artifactId>
+            <version>1.0.0-alpha6</version>
+            <scope>system</scope>
+            <systemPath>${lib.dir}/commons-imaging-1.0.0-alpha6.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.21.0</version>
+            <scope>system</scope>
+            <systemPath>${lib.dir}/commons-io-2.21.0.jar</systemPath>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <finalName>c4j_logorenderer</finalName>
+        <sourceDirectory>src</sourceDirectory>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.3.0</version>
+                <configuration>
+                    <!-- Output JAR to the project root alongside pom.xml -->
+                    <outputDirectory>${project.basedir}</outputDirectory>
+                    <archive>
+                        <manifest>
+                            <mainClass>com.commander4j.logorenderer.LabelViewer</mainClass>
+                        </manifest>
+                        <manifestEntries>
+                            <!-- Class-Path entries are relative to the JAR location -->
+                            <Class-Path>lib/okapibarcode-0.5.5.jar lib/commons-imaging-1.0.0-alpha6.jar lib/commons-io-2.21.0.jar</Class-Path>
+                        </manifestEntries>
+                    </archive>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                    <mainClass>com.commander4j.logorenderer.LabelViewer</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

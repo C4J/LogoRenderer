@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fonts>
+    <font>
+        <labelName>hu024bsn</labelName>
+        <family>Arial</family>
+        <style>BOLD</style>
+        <refHeight>30</refHeight>
+        <refWidth>30</refWidth>
+        <filename/>
+        <renderer>SCALEABLE</renderer>
+        <spacing>PROPORTIONAL</spacing>
+        <ascentFactor>1.0</ascentFactor>
+        <descentFactor>0.25</descentFactor>
+    </font>
+    <font>
+        <labelName>hu047bsn</labelName>
+        <family>Arial</family>
+        <style>BOLD</style>
+        <refHeight>32</refHeight>
+        <refWidth>44</refWidth>
+        <filename/>
+        <renderer>SCALEABLE</renderer>
+        <spacing>PROPORTIONAL</spacing>
+        <ascentFactor>1.35</ascentFactor>
+        <descentFactor>0.25</descentFactor>
+    </font>
+    <font>
+        <labelName>logocomp</labelName>
+        <family>Courier New</family>
+        <style>PLAIN</style>
+        <refHeight>30</refHeight>
+        <refWidth>18</refWidth>
+        <filename/>
+        <renderer>SCALEABLE</renderer>
+        <spacing>MONOSPACED</spacing>
+        <ascentFactor>1.0</ascentFactor>
+        <descentFactor>0.25</descentFactor>
+        <description>Logo Compressed scalable monospaced</description>
+    </font>
+    <font>
+        <labelName>logogoth</labelName>
+        <family>Arial</family>
+        <style>PLAIN</style>
+        <refHeight>30</refHeight>
+        <refWidth>18</refWidth>
+        <filename/>
+        <renderer>SCALEABLE</renderer>
+        <spacing>PROPORTIONAL</spacing>
+        <ascentFactor>1.0</ascentFactor>
+        <descentFactor>0.25</descentFactor>
+        <description>Logo Gothic scalable proportional</description>
+    </font>
+    <font>
+        <labelName>logoscript</labelName>
+        <family>Georgia</family>
+        <style>ITALIC</style>
+        <refHeight>30</refHeight>
+        <refWidth>18</refWidth>
+        <filename/>
+        <renderer>SCALEABLE</renderer>
+        <spacing>PROPORTIONAL</spacing>
+        <ascentFactor>1.0</ascentFactor>
+        <descentFactor>0.25</descentFactor>
+        <description>Logo Script scalable proportional</description>
+    </font>
+    <font>
+        <labelName>logotimes</labelName>
+        <family>Times New Roman</family>
+        <style>PLAIN</style>
+        <refHeight>30</refHeight>
+        <refWidth>18</refWidth>
+        <filename/>
+        <renderer>SCALEABLE</renderer>
+        <spacing>PROPORTIONAL</spacing>
+        <ascentFactor>1.0</ascentFactor>
+        <descentFactor>0.25</descentFactor>
+        <description>Logo Times scalable proportional</description>
+    </font>
+    <font>
+        <labelName>mono821</labelName>
+        <family>Liberation Mono</family>
+        <style>PLAIN</style>
+        <refHeight>30</refHeight>
+        <refWidth>18</refWidth>
+        <filename>LiberationMono-Regular.ttf</filename>
+        <renderer>SCALEABLE</renderer>
+        <spacing>MONOSPACED</spacing>
+        <ascentFactor>1.0</ascentFactor>
+        <descentFactor>0.25</descentFactor>
+        <description>Monospace 821 Regular scalable monospaced</description>
+    </font>
+    <font>
+        <labelName>mono821b</labelName>
+        <family>Bitstream Vera Sans Mono</family>
+        <style>BOLD</style>
+        <refHeight>30</refHeight>
+        <refWidth>30</refWidth>
+        <filename>VeraMoBd.ttf</filename>
+        <renderer>SCALEABLE</renderer>
+        <spacing>MONOSPACED</spacing>
+        <ascentFactor>1.0</ascentFactor>
+        <descentFactor>0.25</descentFactor>
+        <description>Monospace 821 Bold scalable monospaced</description>
+    </font>
+    <font>
+        <labelName>ms030rmn</labelName>
+        <family>Liberation Mono</family>
+        <style>PLAIN</style>
+        <refHeight>30</refHeight>
+        <refWidth>18</refWidth>
+        <filename>LiberationMono-Regular.ttf</filename>
+        <renderer>SCALEABLE</renderer>
+        <spacing>MONOSPACED</spacing>
+        <ascentFactor>1.0</ascentFactor>
+        <descentFactor>0.25</descentFactor>
+        <description>Monospaced 030 Regular Monospaced roman-8</description>
+    </font>
+    <font>
+        <labelName>ms050bmn</labelName>
+        <family>Bitstream Vera Sans Mono</family>
+        <style>BOLD</style>
+        <refHeight>50</refHeight>
+        <refWidth>30</refWidth>
+        <filename>VeraMoBd.ttf</filename>
+        <renderer>SCALEABLE</renderer>
+        <spacing>MONOSPACED</spacing>
+        <ascentFactor>1.0</ascentFactor>
+        <descentFactor>0.25</descentFactor>
+        <description>Monospaced 050 Bold Monospaced roman-8</description>
+    </font>
+    <font>
+        <labelName>ms100bmn</labelName>
+        <family>Courier New</family>
+        <style>BOLD</style>
+        <refHeight>100</refHeight>
+        <refWidth>60</refWidth>
+        <filename/>
+        <renderer>SCALEABLE</renderer>
+        <spacing>MONOSPACED</spacing>
+        <ascentFactor>1.0</ascentFactor>
+        <descentFactor>0.25</descentFactor>
+        <description>Monospaced 100 Bold Monospaced roman-8</description>
+    </font>
+    <font>
+        <labelName>ms239bmn</labelName>
+        <family>Bitstream Vera Sans Mono</family>
+        <style>BOLD</style>
+        <refHeight>239</refHeight>
+        <refWidth>144</refWidth>
+        <filename>VeraMoBd.ttf</filename>
+        <renderer>SCALEABLE</renderer>
+        <spacing>MONOSPACED</spacing>
+        <ascentFactor>1.0</ascentFactor>
+        <descentFactor>0.25</descentFactor>
+        <description>Monospaced 239 Bold Monospaced roman-8</description>
+    </font>
+    <font>
+        <labelName>ocra</labelName>
+        <family>Courier New</family>
+        <style>PLAIN</style>
+        <refHeight>30</refHeight>
+        <refWidth>18</refWidth>
+        <filename/>
+        <renderer>BITMAP</renderer>
+        <spacing>MONOSPACED</spacing>
+        <ascentFactor>1.0</ascentFactor>
+        <descentFactor>0.25</descentFactor>
+        <description>OCR-A scalable monospaced</description>
+    </font>
+    <font>
+        <labelName>ocrb</labelName>
+        <family>Courier New</family>
+        <style>PLAIN</style>
+        <refHeight>30</refHeight>
+        <refWidth>18</refWidth>
+        <filename/>
+        <renderer>BITMAP</renderer>
+        <spacing>MONOSPACED</spacing>
+        <ascentFactor>1.0</ascentFactor>
+        <descentFactor>0.25</descentFactor>
+        <description>OCR-B scalable monospaced</description>
+    </font>
+    <font>
+        <labelName>ps107bmn</labelName>
+        <family>Bitstream Vera Sans Mono</family>
+        <style>BOLD</style>
+        <refHeight>107</refHeight>
+        <refWidth>64</refWidth>
+        <filename>VeraMoBd.ttf</filename>
+        <renderer>SCALEABLE</renderer>
+        <spacing>MONOSPACED</spacing>
+        <ascentFactor>1.0</ascentFactor>
+        <descentFactor>0.25</descentFactor>
+        <description>Prestige 107 Bold Monospaced roman-8</description>
+    </font>
+    <font>
+        <labelName>sw020bsn</labelName>
+        <family>Arial</family>
+        <style>PLAIN</style>
+        <refHeight>14</refHeight>
+        <refWidth>15</refWidth>
+        <filename/>
+        <renderer>SCALEABLE</renderer>
+        <spacing>PROPORTIONAL</spacing>
+        <ascentFactor>1.0</ascentFactor>
+        <descentFactor>0.25</descentFactor>
+        <description>Swiss 020 Bold Proportional roman-8</description>
+    </font>
+    <font>
+        <labelName>sw030bsn</labelName>
+        <family>Arial Narrow</family>
+        <style>BOLD</style>
+        <refHeight>30</refHeight>
+        <refWidth>16</refWidth>
+        <filename/>
+        <renderer>SCALEABLE</renderer>
+        <spacing>PROPORTIONAL</spacing>
+        <ascentFactor>1.0</ascentFactor>
+        <descentFactor>0.25</descentFactor>
+        <description>Swiss 030 Bold Proportional roman-8</description>
+    </font>
+    <font>
+        <labelName>sw030rsn</labelName>
+        <family>Arial</family>
+        <style>PLAIN</style>
+        <refHeight>40</refHeight>
+        <refWidth>30</refWidth>
+        <filename/>
+        <renderer>SCALEABLE</renderer>
+        <spacing>PROPORTIONAL</spacing>
+        <ascentFactor>0.75</ascentFactor>
+        <descentFactor>0.25</descentFactor>
+        <description>Swiss 030 Regular Proportional roman-8</description>
+    </font>
+    <font>
+        <labelName>sw036osx</labelName>
+        <family>Arial</family>
+        <style>BOLD</style>
+        <refHeight>20</refHeight>
+        <refWidth>18</refWidth>
+        <filename/>
+        <renderer>SCALEABLE</renderer>
+        <spacing>PROPORTIONAL</spacing>
+        <ascentFactor>1.0</ascentFactor>
+        <descentFactor>0.25</descentFactor>
+    </font>
+    <font>
+        <labelName>sw050bsn</labelName>
+        <family>Arial</family>
+        <style>PLAIN</style>
+        <refHeight>40</refHeight>
+        <refWidth>50</refWidth>
+        <filename/>
+        <renderer>SCALEABLE</renderer>
+        <spacing>PROPORTIONAL</spacing>
+        <ascentFactor>1.10</ascentFactor>
+        <descentFactor>0.25</descentFactor>
+        <description>Swiss 050 Bold Proportional roman-8</description>
+    </font>
+    <font>
+        <labelName>sw050rsn</labelName>
+        <family>Arial Narrow</family>
+        <style>PLAIN</style>
+        <refHeight>30</refHeight>
+        <refWidth>30</refWidth>
+        <filename/>
+        <renderer>SCALEABLE</renderer>
+        <spacing>PROPORTIONAL</spacing>
+        <ascentFactor>1.05</ascentFactor>
+        <descentFactor>0.25</descentFactor>
+        <description>Swiss 050 Regular Proportional roman-8</description>
+    </font>
+    <font>
+        <labelName>sw060bsn</labelName>
+        <family>.AppleSystemUIFont</family>
+        <style>BOLD</style>
+        <refHeight>50</refHeight>
+        <refWidth>55</refWidth>
+        <filename/>
+        <renderer>SCALEABLE</renderer>
+        <spacing>PROPORTIONAL</spacing>
+        <ascentFactor>1.289</ascentFactor>
+        <descentFactor>0.800</descentFactor>
+    </font>
+    <font>
+        <labelName>sw100bsn</labelName>
+        <family>Arial</family>
+        <style>BOLD</style>
+        <refHeight>100</refHeight>
+        <refWidth>60</refWidth>
+        <filename/>
+        <renderer>SCALEABLE</renderer>
+        <spacing>PROPORTIONAL</spacing>
+        <ascentFactor>1.0</ascentFactor>
+        <descentFactor>0.25</descentFactor>
+        <description>Swiss 100 Bold Proportional roman-8</description>
+    </font>
+    <font>
+        <labelName>sw239bsn</labelName>
+        <family>Arial</family>
+        <style>BOLD</style>
+        <refHeight>239</refHeight>
+        <refWidth>144</refWidth>
+        <filename/>
+        <renderer>SCALEABLE</renderer>
+        <spacing>PROPORTIONAL</spacing>
+        <ascentFactor>1.0</ascentFactor>
+        <descentFactor>0.25</descentFactor>
+        <description>Swiss 239 Bold Proportional roman-8</description>
+    </font>
+    <font>
+        <labelName>sw721bc</labelName>
+        <family>Triumvirate Cond</family>
+        <style>BOLD</style>
+        <refHeight>30</refHeight>
+        <refWidth>15</refWidth>
+        <filename>ATTriumvirate-CondensedBold.ttf</filename>
+        <renderer>SCALEABLE</renderer>
+        <spacing>PROPORTIONAL</spacing>
+        <ascentFactor>1.0</ascentFactor>
+        <descentFactor>0.25</descentFactor>
+        <description>Swiss 721 Bold Condensed scalable proportional</description>
+    </font>
+    <font>
+        <labelName>swis721b</labelName>
+        <family>Monospaced</family>
+        <style>BOLD</style>
+        <refHeight>30</refHeight>
+        <refWidth>25</refWidth>
+        <filename/>
+        <renderer>SCALEABLE</renderer>
+        <spacing>PROPORTIONAL</spacing>
+        <ascentFactor>1.15</ascentFactor>
+        <descentFactor>0.4</descentFactor>
+        <description>Swiss 721 Bold scalable proportional</description>
+    </font>
+    <font>
+        <labelName>swis721r</labelName>
+        <family>Triumvirate</family>
+        <style>PLAIN</style>
+        <refHeight>30</refHeight>
+        <refWidth>18</refWidth>
+        <filename>ATTriumvirate.ttf</filename>
+        <renderer>SCALEABLE</renderer>
+        <spacing>PROPORTIONAL</spacing>
+        <ascentFactor>1.0</ascentFactor>
+        <descentFactor>0.25</descentFactor>
+        <description>Swiss 721 Regular scalable proportional</description>
+    </font>
+    <font>
+        <labelName>swiscyrb</labelName>
+        <family>Arial</family>
+        <style>BOLD</style>
+        <refHeight>24</refHeight>
+        <refWidth>28</refWidth>
+        <filename/>
+        <renderer>SCALEABLE</renderer>
+        <spacing>PROPORTIONAL</spacing>
+        <ascentFactor>1.0</ascentFactor>
+        <descentFactor>0.25</descentFactor>
+        <description>Swiss Cyrillic Bold scalable proportional</description>
+    </font>
+    <font>
+        <labelName>swiscyrr</labelName>
+        <family>Arial</family>
+        <style>PLAIN</style>
+        <refHeight>30</refHeight>
+        <refWidth>18</refWidth>
+        <filename/>
+        <renderer>SCALEABLE</renderer>
+        <spacing>PROPORTIONAL</spacing>
+        <ascentFactor>1.0</ascentFactor>
+        <descentFactor>0.25</descentFactor>
+        <description>Swiss Cyrillic Regular scalable proportional</description>
+    </font>
+    <font>
+        <labelName>zu024bsn</labelName>
+        <family>SansSerif</family>
+        <style>PLAIN</style>
+        <refHeight>30</refHeight>
+        <refWidth>18</refWidth>
+        <filename/>
+        <renderer>SCALEABLE</renderer>
+        <spacing>PROPORTIONAL</spacing>
+        <ascentFactor>1.0</ascentFactor>
+        <descentFactor>0.25</descentFactor>
+    </font>
+    <font>
+        <labelName>default</labelName>
+        <family>SansSerif</family>
+        <style>PLAIN</style>
+        <refHeight>30</refHeight>
+        <refWidth>18</refWidth>
+        <filename/>
+        <renderer>SCALEABLE</renderer>
+        <spacing>PROPORTIONAL</spacing>
+        <ascentFactor>1.0</ascentFactor>
+        <descentFactor>0.25</descentFactor>
+        <description>Fallback for any unmapped Logopak font name</description>
+    </font>
+</fonts>
