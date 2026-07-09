@@ -44,6 +44,15 @@ import javax.swing.JToolBar;
 import javax.swing.KeyStroke;
 import javax.swing.SwingUtilities;
 import javax.swing.filechooser.FileNameExtensionFilter;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.transform.OutputKeys;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.NodeList;
 
 import com.commander4j.dialog.JDialogAbout;
 import com.commander4j.dialog.JDialogLicenses;
@@ -180,6 +189,7 @@ public class ViewerFrame extends JFrame implements ServerCallback
         }
 
         loadSscc();
+        loadState();
         setVisible(true);
     }
 
@@ -367,6 +377,10 @@ public class ViewerFrame extends JFrame implements ServerCallback
 
     private void startServer()
     {
+        if (portCombo.isEditable()) {
+            portCombo.setSelectedItem(portCombo.getEditor().getItem());
+        }
+
         String ip = (String) ipCombo.getSelectedItem();
         int port;
         try {
@@ -1119,9 +1133,76 @@ public class ViewerFrame extends JFrame implements ServerCallback
     {
         int answer = JOptionPane.showConfirmDialog(this, "Exit application?", "Confirm", JOptionPane.YES_NO_OPTION);
         if (answer == JOptionPane.YES_OPTION) {
+            saveState();
             stopServer();
             System.exit(0);
         }
+    }
+
+    // -----------------------------------------------------------------------
+    // State persistence
+    // -----------------------------------------------------------------------
+
+    private static final File STATE_FILE = new File("xml/config/state.xml");
+
+    private void saveState()
+    {
+        if (portCombo.isEditable()) {
+            portCombo.setSelectedItem(portCombo.getEditor().getItem());
+        }
+
+        try {
+            STATE_FILE.getParentFile().mkdirs();
+            Document doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().newDocument();
+            Element root = doc.createElement("state");
+            doc.appendChild(root);
+
+            addXmlElement(doc, root, "ip",   String.valueOf(ipCombo.getSelectedItem()).trim());
+            addXmlElement(doc, root, "port", String.valueOf(portCombo.getSelectedItem()).trim());
+
+            var tf = TransformerFactory.newInstance().newTransformer();
+            tf.setOutputProperty(OutputKeys.INDENT, "yes");
+            tf.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "4");
+            tf.transform(new DOMSource(doc), new StreamResult(STATE_FILE));
+        } catch (Exception ex) {
+            logPanel.info("Warning: could not save state: " + ex.getMessage());
+        }
+    }
+
+    private void loadState()
+    {
+        if (!STATE_FILE.exists()) {
+            return;
+        }
+
+        try {
+            Document doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(STATE_FILE);
+
+            String ip   = xmlText(doc, "ip");
+            String port = xmlText(doc, "port");
+
+            if (!ip.isEmpty()) {
+                ipCombo.setSelectedItem(ip);   // no-op if the address no longer exists on this host
+            }
+            if (!port.isEmpty()) {
+                portCombo.setSelectedItem(port);
+            }
+        } catch (Exception ex) {
+            logPanel.info("Warning: could not load state: " + ex.getMessage());
+        }
+    }
+
+    private static void addXmlElement(Document doc, Element parent, String name, String value)
+    {
+        Element el = doc.createElement(name);
+        el.setTextContent(value == null ? "" : value);
+        parent.appendChild(el);
+    }
+
+    private static String xmlText(Document doc, String name)
+    {
+        NodeList nodes = doc.getElementsByTagName(name);
+        return nodes.getLength() == 0 ? "" : nodes.item(0).getTextContent().trim();
     }
 
     // -----------------------------------------------------------------------

@@ -12,7 +12,7 @@ public class Common
 
     // Application metadata
     public static final String programName = "LogoRenderer";
-    public static final String version     = "2.04";
+    public static final String version     = "2.05";
     public static final String helpURL     = "https://wiki.commander4j.com/index.php/LogoRenderer";
 
     // Shown in the About dialog (newlines collapse in its HTML rendering) and
